@@ -1,0 +1,34 @@
+
+.bcg{"data-0" => "background-position:0px 0px;", "data-500" => "background-position:0px -250px;"}
+  .hsContent
+    %h1 Dan McNamara is...
+.container#content
+  .col-md-12
+    %p.lead.story 
+      Legends are told around camp fires, but it's unlikely they're about me. Originally from Pennsylvania, I've been enjoying living in Boston for the past 5 years. I'm a 
+      =age 
+      year old in my senior year of a Computer Engineering degree from Northeastern University. When I'm not coding, I'm probably cooking, drinking craft beer, playing tennis, or reading. 
+  .links
+    .col-md-12
+      %h1 Find me on...
+    .col-md-3
+      =link_to image_tag("Octocat_small.png"), "https://github.com/DMcNamara", :target => "_blank"
+      %h2 Github
+      %p.center For my latest code updates
+    .col-md-3
+      =link_to image_tag("goodreads-badge-140.png"), "https://www.goodreads.com/dmcnamara1", :target => "_blank"
+      %h2 Goodreads
+      %p.center What I'm reading and what I've read
+    .col-md-3
+      =link_to image_tag("LinkedIn-small.png"), "http://www.linkedin.com/pub/daniel-mcnamara/5a/499/47a/", :target => "_blank"
+      %h2 LinkedIn
+      %p.center For all things professional
+    .col-md-3
+      =link_to image_tag("Twitter_logo_blue_small.png"), "https://twitter.com/TheGreatDMc", :target => "_blank"
+      %h2 Twitter
+      %p.center Occasional updates on life 
+
+:javascript
+  $(function() {
+      skrollr.init();
+  });

@@ -1,5 +1,4 @@
--# navigation styled for Bootstrap 3.0
-%nav.navbar.navbar-default.navbar-fixed-top
+%nav.navbar.navbar-inverse.navbar-fixed-top
   .container
     .navbar-header
       %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
@@ -9,5 +8,8 @@
         %span.icon-bar
       = link_to 'Home', root_path, class: 'navbar-brand'
     .collapse.navbar-collapse
-      %ul.nav.navbar-nav
+      %ul.nav.navbar-nav.pull-right
+        %li= link_to('<i class="fa fa-github fa-1x"></i>'.html_safe, "https://github.com/DMcNamara", :target => "_blank")
+        %li= link_to('<i class="fa fa-linkedin fa-1x"></i>'.html_safe, "http://www.linkedin.com/pub/daniel-mcnamara/5a/499/47a/", :target => "_blank")
+        %li= link_to('<i class="fa fa-twitter fa-1x"></i>'.html_safe, "https://twitter.com/TheGreatDMc", :target => "_blank")
         = render 'layouts/navigation_links'
